@@ -15,5 +15,10 @@ router.get('/',peliculasController.listado);
 
 router.get('/:id',peliculasController.detalle);
 
+// Actualizacion
+
+router.get('/editar/:id', peliculasController.editar)
+router.post('/editar/:id', peliculasController.actualizar)
+
 
 module.exports = router;
