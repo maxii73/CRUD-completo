@@ -5,7 +5,9 @@
     <% for( let i = 0; i < peliculas.length; i++ ) { %>
 
         <li>
-            <%= peliculas[i].title %> 
+            <a href="/peliculas/<%= peliculas[i].id %> ">
+                <%= peliculas[i].title %> 
+            </a>
         </li>
     
     <% } %>
