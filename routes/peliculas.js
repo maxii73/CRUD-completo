@@ -20,5 +20,9 @@ router.get('/:id',peliculasController.detalle);
 router.get('/editar/:id', peliculasController.editar)
 router.post('/editar/:id', peliculasController.actualizar)
 
+//Borrar
+
+router.post('/borrar/:id', peliculasController.borrar)
+
 
 module.exports = router;
